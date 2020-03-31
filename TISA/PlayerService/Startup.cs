@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PlayerService.Database;
+using PlayerService.MessageHandlers;
 using Shared;
 
 namespace PlayerService
@@ -24,6 +25,11 @@ namespace PlayerService
             services.AddSharedServices("Player Service");
             services.AddDbContext<PlayerDbContext>();
 
+            services.AddMessagePublishing("QuestService", builder => {
+                // This tells the application that when it receives a `QuestCompleted` message, it should handle it using the `QuestCompletedMessageHandler`.
+                builder.WithHandler<QuestCompletedMessageHandler>("QuestCompleted");
+            });
+
             using var db = new PlayerDbContext();
             db.Database.EnsureCreated();
         }
@@ -36,7 +42,7 @@ namespace PlayerService
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.gitignore_global" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="AchievementService" t="IncludeRecursive">
+        <e p="AchievementService.csproj" t="IncludeRecursive" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="AchievementController.cs" t="Include" />
+        </e>
+        <e p="Database" t="Include">
+          <e p="Achievement.cs" t="Include" />
+          <e p="AchievementDbContext.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="AchievementService.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="ItemService" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="ItemController.cs" t="Include" />
+        </e>
+        <e p="Database" t="Include">
+          <e p="Item.cs" t="Include" />
+          <e p="ItemDbContext.cs" t="Include" />
+          <e p="PlayerItem.cs" t="Include" />
+        </e>
+        <e p="ItemService.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="ItemService.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="PlayerService" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="PlayerController.cs" t="Include" />
+        </e>
+        <e p="Database" t="Include">
+          <e p="Player.cs" t="Include" />
+          <e p="PlayerDbContext.cs" t="Include" />
+        </e>
+        <e p="MessageHandlers" t="Include">
+          <e p="QuestCompletedMessageHandler.cs" t="Include" />
+        </e>
+        <e p="Messages" t="Include">
+          <e p="Quest.cs" t="Include" />
+          <e p="QuestCompleted.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="PlayerService.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PlayerService.csproj" t="IncludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="QuestService" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="PlayerQuestController.cs" t="Include" />
+          <e p="QuestController.cs" t="Include" />
+        </e>
+        <e p="Database" t="Include">
+          <e p="CompletedQuest.cs" t="Include" />
+          <e p="Quest.cs" t="Include" />
+          <e p="QuestDbContext.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="QuestService.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="QuestService.csproj" t="IncludeRecursive" />
+        <e p="Startup.cs" t="Include" />
+        <e p="WeatherForecast.cs" t="Include" />
+      </e>
+      <e p="Shared" t="IncludeRecursive">
+        <e p="ApplicationBuilderExtensions.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Messaging" t="Include">
+          <e p="IMessageHandler.cs" t="Include" />
+          <e p="IMessagePublisher.cs" t="Include" />
+          <e p="MessageHandlerRepository.cs" t="Include" />
+          <e p="MessagingBuilder.cs" t="Include" />
+          <e p="QueueName.cs" t="Include" />
+          <e p="QueueReaderService.cs" t="Include" />
+          <e p="RabbitMqConnection.cs" t="Include" />
+          <e p="RabbitMqMessagePublisher.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Shared.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ServiceCollectionExtensions.cs" t="Include" />
+        <e p="Shared.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="TISA" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Middleware" t="Include">
+          <e p="PlayerMiddleware.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="TISA.AssemblyInfo.cs" t="Include" />
+              <e p="TISA.RazorAssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Pages" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Admin" t="Include">
+            <e p="Index.cshtml" t="Include" />
+            <e p="Index.cshtml.cs" t="Include" />
+            <e p="Items" t="Include">
+              <e p="Create.cshtml" t="Include" />
+              <e p="Create.cshtml.cs" t="Include" />
+              <e p="Edit.cshtml" t="Include" />
+              <e p="Edit.cshtml.cs" t="Include" />
+              <e p="Index.cshtml" t="Include" />
+              <e p="Index.cshtml.cs" t="Include" />
+              <e p="ItemForm.cs" t="Include" />
+            </e>
+            <e p="Quests" t="Include">
+              <e p="Create.cshtml" t="Include" />
+              <e p="Create.cshtml.cs" t="Include" />
+              <e p="Edit.cshtml" t="Include" />
+              <e p="Edit.cshtml.cs" t="Include" />
+              <e p="Index.cshtml" t="Include" />
+              <e p="Index.cshtml.cs" t="Include" />
+              <e p="QuestForm.cs" t="Include" />
+              <e p="QuestServiceExtensions.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Game" t="Include">
+            <e p="Achievements" t="Include">
+              <e p="Index.cshtml" t="Include" />
+              <e p="Index.cshtml.cs" t="Include" />
+            </e>
+            <e p="Index.cshtml" t="Include" />
+            <e p="Index.cshtml.cs" t="Include" />
+            <e p="PlayerInformation" t="Include">
+              <e p="Index.cshtml" t="Include" />
+              <e p="Index.cshtml.cs" t="Include" />
+            </e>
+            <e p="Quests" t="Include">
+              <e p="Finish.cshtml" t="Include" />
+              <e p="Finish.cshtml.cs" t="Include" />
+              <e p="Index.cshtml" t="Include" />
+              <e p="Index.cshtml.cs" t="Include" />
+              <e p="Quest.cshtml" t="Include" />
+              <e p="Quest.cshtml.cs" t="Include" />
+            </e>
+            <e p="Shop" t="Include">
+              <e p="Index.cshtml" t="Include" />
+              <e p="Index.cshtml.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Index.cshtml" t="Include" />
+          <e p="Index.cshtml.cs" t="Include" />
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="TagHelpers" t="Include">
+          <e p="PlayerNameTagHelper.cs" t="Include" />
+          <e p="QuestDescriptionTagHelper.cs" t="Include" />
+        </e>
+        <e p="TISA.csproj" t="IncludeRecursive" />
+        <e p="wwwroot" t="Include">
+          <e p="css" t="Include">
+            <e p="site.css" t="Include" />
+          </e>
+          <e p="favicon.ico" t="Include" />
+          <e p="js" t="Include">
+            <e p="site.js" t="Include" />
+          </e>
+          <e p="lib" t="Include">
+            <e p="bootstrap" t="Include">
+              <e p="dist" t="Include">
+                <e p="css" t="Include">
+                  <e p="bootstrap-grid.css" t="Include" />
+                  <e p="bootstrap-grid.css.map" t="Include" />
+                  <e p="bootstrap-grid.min.css" t="Include" />
+                  <e p="bootstrap-grid.min.css.map" t="Include" />
+                  <e p="bootstrap-reboot.css" t="Include" />
+                  <e p="bootstrap-reboot.css.map" t="Include" />
+                  <e p="bootstrap-reboot.min.css" t="Include" />
+                  <e p="bootstrap-reboot.min.css.map" t="Include" />
+                  <e p="bootstrap.css" t="Include" />
+                  <e p="bootstrap.css.map" t="Include" />
+                  <e p="bootstrap.min.css" t="Include" />
+                  <e p="bootstrap.min.css.map" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="bootstrap.bundle.js" t="Include" />
+                  <e p="bootstrap.bundle.js.map" t="Include" />
+                  <e p="bootstrap.bundle.min.js" t="Include" />
+                  <e p="bootstrap.bundle.min.js.map" t="Include" />
+                  <e p="bootstrap.js" t="Include" />
+                  <e p="bootstrap.js.map" t="Include" />
+                  <e p="bootstrap.min.js" t="Include" />
+                  <e p="bootstrap.min.js.map" t="Include" />
+                </e>
+              </e>
+              <e p="LICENSE" t="Include" />
+            </e>
+            <e p="jquery" t="Include">
+              <e p="dist" t="Include">
+                <e p="jquery.js" t="Include" />
+                <e p="jquery.min.js" t="Include" />
+                <e p="jquery.min.map" t="Include" />
+              </e>
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+            <e p="jquery-validation" t="Include">
+              <e p="dist" t="Include">
+                <e p="additional-methods.js" t="Include" />
+                <e p="additional-methods.min.js" t="Include" />
+                <e p="jquery.validate.js" t="Include" />
+                <e p="jquery.validate.min.js" t="Include" />
+              </e>
+              <e p="LICENSE.md" t="Include" />
+            </e>
+            <e p="jquery-validation-unobtrusive" t="Include">
+              <e p="jquery.validate.unobtrusive.js" t="Include" />
+              <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+              <e p="LICENSE.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="TISA.Models" t="IncludeRecursive">
+        <e p="Achievement.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Item.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="TISA.Models.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Player.cs" t="Include" />
+        <e p="Quest.cs" t="Include" />
+        <e p="TISA.Models.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="TISA.Services" t="IncludeRecursive">
+        <e p="AchievementService.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="IAchievementService.cs" t="Include" />
+        <e p="IItemService.cs" t="Include" />
+        <e p="IPlayerService.cs" t="Include" />
+        <e p="IQuestService.cs" t="Include" />
+        <e p="ItemService.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="TISA.Services.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PlayerService.cs" t="Include" />
+        <e p="QuestService.cs" t="Include" />
+        <e p="ServiceCollectionExtensions.cs" t="Include" />
+        <e p="TISA.Services.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="TISA.sln" t="IncludeFlat" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_TISA.-1303971528.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
+  </component>
+</project>

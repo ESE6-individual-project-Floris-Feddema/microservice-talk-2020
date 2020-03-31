@@ -1,28 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Flurl.Http;
 using TISA.Models;
 
 namespace TISA.Services
 {
     internal class PlayerService : IPlayerService
     {
-        private static List<Player> _players = new List<Player>();
-        public Player Player { get; set; }
+        public Player Player { get; private set; }
 
-        public bool IsPlayerDefined => Player != null;
-
-        public Task<Guid> CreatePlayerNameAsync(string playerName)
+        public async Task<Guid> CreatePlayerNameAsync(string playerName)
         {
-            var player = new Player { Level = 1, Name = playerName, Experience = 0, Gold = 0, Id = Guid.NewGuid() };
-            _players.Add(player);
-            return Task.FromResult(player.Id);
+            var response = await "http://localhost:7400/Player".PostJsonAsync(playerName);
+            if (response.StatusCode != System.Net.HttpStatusCode.Created)
+            {
+                throw new InvalidOperationException("Something went wrong trying to create the player");
+            }
+
+            var player = await $"http://localhost:7400{response.Headers.Location}".GetJsonAsync<Player>();
+            return player.Id;
         }
 
-        public Task SetPlayerByPlayerIdAsync(Guid playerId)
+        public async Task SetPlayerByPlayerIdAsync(Guid playerId)
         {
-            Player = _players.Find(player => player.Id == playerId);
-            return Task.CompletedTask;
+            var response = await $"http://localhost:7400/Player/{playerId}".GetJsonAsync<Player>();
+            Player = response;
         }
+
     }
 }

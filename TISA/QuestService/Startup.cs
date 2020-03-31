@@ -23,6 +23,7 @@ namespace QuestService
             services.AddControllers();
             services.AddSharedServices("Quest Service");
             services.AddDbContext<QuestDbContext>();
+            services.AddMessagePublishing("QuestService");
 
             using var context = new QuestDbContext();
             context.Database.EnsureCreated();
@@ -36,7 +37,7 @@ namespace QuestService
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 
